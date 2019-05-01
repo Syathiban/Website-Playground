@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<title>Project Pictures</title>
+<meta charset="UTF-8">
+<link rel='icon' href='images/logo.png' type='image/x-icon'/ >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+.wrapper {
+    text-align: center;
+	}
+	
+#div1{
+width: auto;
+height: auto;
+}
+
+
+#div2{
+/*width: 400px;*/
+/*heigth: 400px;*/
+margin-left: auto;
+margin-right: auto;
+
+}
+
+a img {
+        border-radius: 50%;
+        display: block;
+        border: none;
+		display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+a:hover img{
+  box-shadow: 10px 10px 5px #888888;
+}
+
+
+.button {
+    position: absolute;
+    top: 100%;
+	height: 50px;
+    width: 100px;
+    padding: 15px 32px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('images/car-10.jpg');
+    min-height: 100%;
+}
+/*
+#center{
+   display: block;
+        margin-left: auto;
+        margin-right: auto;
+}*/
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<style type="text/css">
+.zoomin img {
+/*
+  height: 240px;
+  width: 340px;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+          */
+    transition: transform .2s; /* Animation */
+    width: 220px;
+    height: 220px;
+}
+.zoomin img:hover {
+/*
+  height: 275px;
+  width: 375px;
+  */
+    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hide-small w3-hover-black w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+    <a href="Login.html" class="w3-bar-item w3-button "><i class="fa fa-user"></i> PORTFOLIO</a>
+    <a href="Pictures.html" class="w3-bar-item w3-button "><i class="fa fa-image"></i> PICTURES</a>
+    <a href="Music.html" class="w3-bar-item w3-button "><i class="fa fa-music"></i> MUSIC</a>
+    <a href="TV.html" class="w3-bar-item w3-button "><i class="fa fa-film"></i> TV-SERIES</a>
+    </a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-center"> MUSIC</span></span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="div1" class="w3-content w3-container w3-padding-64" >
+  <h3 class="w3-center"></h3>
+  <p id="center" class="w3-center"><em>Let your ears here some of the best songs that are out right now.</em></p>
+  <div class="w3-row" style="text-align:center">
+    <div id="div2" class="zoomin w3-col m6 w3-padding-large">
+    <a href="https://www.youtube.com/watch?v=ffxKSjUwKdU" >
+    <img  src="images/Ariana.jpg" class="w3-hover w3-round w3-image " align="middle" width="405" height="205">
+	</a>
+	
+	</div>
+    <!-- Hide this text on small devices -->
+    <div id="div2" class="zoomin w3-col m6 w3-padding-large">
+    <a href="https://www.youtube.com/watch?v=DkeiKbqa02g">
+	<img  src="images/DuaLipa.jpg" class="w3-hover w3-round w3-image"  align="middle" width="405" height="205">
+	</a>
+	</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a id="goTop" href="javascript:void(0);" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-center">Images from: unsplash.com</p>
+  <p>Powered by IAA</a></p> 
+  
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<script src="js/top.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>
